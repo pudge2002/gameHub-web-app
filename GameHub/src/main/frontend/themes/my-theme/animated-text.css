@@ -1,0 +1,23 @@
+@keyframes gradient {
+    0% {
+        color: #DE0B29;
+    }
+    25% {
+        color: #326DB3;
+    }
+    50% {
+        color: #90AA9E;
+    }
+    75% {
+        color: #F3C202;
+    }
+    100% {
+        color: #DE0B29;
+    }
+}
+
+.animated-text {
+    animation: gradient 5s infinite;
+    font-size: 2em;
+    font-weight: bold;
+}

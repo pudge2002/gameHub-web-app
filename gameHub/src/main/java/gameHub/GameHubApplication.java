@@ -1,13 +1,15 @@
-package gameHub;
+package GameHub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.vaadin.flow.theme.Theme;
+import com.vaadin.flow.component.page.AppShellConfigurator;
 
 @SpringBootApplication
-public class GameHubApplication {
+@Theme("my-theme")
+public class GameHubApplication implements AppShellConfigurator {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GameHubApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(GameHubApplication.class, args);
+    }
 }
