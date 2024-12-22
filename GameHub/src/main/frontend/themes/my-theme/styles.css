@@ -2,33 +2,6 @@
 @import url('./main-layout.css');
 @import url('./animated-text.css');
 @import url('./nav-styles.css');
+@import url('./block-style.css');
 
-.home-view {
-    background-image: url('https://c0.wallpaperflare.com/path/87/678/343/gray-sony-ps2-console-6a4fabfe4ab82cd4a194fefd4ddcb161.jpg'); /* Укажите путь к вашей картинке */
-    background-size: cover; /* Масштабирует фоновую картинку, чтобы она покрывала весь элемент */
-    background-position: center; /* Центрирует фоновую картинку */
-    background-repeat: no-repeat; /* Предотвращает повторение фона */
-    width: 100%; /* Убедитесь, что элемент занимает всю ширину */
-    height: 87.3vh; /* Убедитесь, что элемент занимает всю высоту */
-    filter: blur(0px); /* Добавляет размытие к фоновой картинке */
-}
-.block img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Заливает изображение в блок */
-    border-radius: 5px;
-}
 
-.glass-effect {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    backdrop-filter: blur(10px); /* Эффект стекла */
-    font-weight: bold; /* Делает текст жирным */
-    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
-}

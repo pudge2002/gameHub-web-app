@@ -1,0 +1,108 @@
+.home-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Начинаем сверху */
+    align-items: center;
+    height: 100%; /* Занимает всю высоту экрана */
+    background-image: url('https://c0.wallpaperflare.com/path/87/678/343/gray-sony-ps2-console-6a4fabfe4ab82cd4a194fefd4ddcb161.jpg'); /* Укажите путь к вашей картинке */
+    background-size: cover; /* Масштабирует фоновую картинку, чтобы она покрывала весь элемент */
+    background-position: center; /* Центрирует фоновую картинку */
+    background-repeat: no-repeat; /* Предотвращает повторение фона */
+    width: 100%; /* Убедитесь, что элемент занимает всю ширину */
+    padding: 20px; /* Добавляем отступы */
+    box-sizing: border-box; /* Включаем отступы в размеры */
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+}
+
+.add-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.filter-input {
+    margin-right: 10px;
+}
+
+.publisher-view {
+    height: 100%; /* Занимает всю высоту экрана */
+    background-image: url('https://wallpapers.com/images/featured/xbox-series-x-roz8agvfa6wdkxav.jpg'); /* Укажите путь к вашей картинке */
+    background-size: cover; /* Масштабирует фоновую картинку, чтобы она покрывала весь элемент */
+    background-position: center; /* Центрирует фоновую картинку */
+    background-repeat: no-repeat; /* Предотвращает повторение фона */
+    width: 100%; /* Убедитесь, что элемент занимает всю ширину */
+    padding: 20px; /* Добавляем отступы */
+    box-sizing: border-box; /* Включаем отступы в размеры */
+}
+.developer-view {
+    height: 100%; /* Занимает всю высоту экрана */
+    background-image: url('https://img.goodfon.com/original/3840x2160/4/cd/the-witcher-cyberpunk-207720-let-cd-projekt-red-geralt-iz-ri.jpg'); /* Укажите путь к вашей картинке */
+    background-size: cover; /* Масштабирует фоновую картинку, чтобы она покрывала весь элемент */
+    background-position: center; /* Центрирует фоновую картинку */
+    background-repeat: no-repeat; /* Предотвращает повторение фона */
+    width: 100%; /* Убедитесь, что элемент занимает всю ширину */
+    padding: 20px; /* Добавляем отступы */
+    box-sizing: border-box; /* Включаем отступы в размеры */
+}
+.game-view {
+    height: 100vh; /* Занимает всю высоту экрана */
+    background-image: url('https://wallpapercat.com/w/full/0/e/f/885-3840x2160-desktop-4k-the-last-of-us-game-background.jpg'); /* Укажите путь к вашей картинке */
+    background-size: cover; /* Масштабирует фоновую картинку, чтобы она покрывала весь элемент */
+    background-position: center; /* Центрирует фоновую картинку */
+    background-repeat: no-repeat; /* Предотвращает повторение фона */
+    width: 100%; /* Убедитесь, что элемент занимает всю ширину */
+    padding: 20px; /* Добавляем отступы */
+    box-sizing: border-box; /* Включаем отступы в размеры */
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Отступы между карточками */
+}
+
+.block {
+    transition: transform 0.3s ease; /* Плавный переход для увеличения */
+    margin: 10px; /* Добавляем отступы между карточками */
+    width: 300px; /* Фиксированная ширина карточек */
+}
+
+.block:hover {
+    transform: scale(1.1); /* Увеличивает блок на 10% при наведении */
+}
+
+.block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заливает изображение в блок */
+    border-radius: 5px;
+}
+
+.glass-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Эффект стекла */
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    font-weight: bold; /* Делает текст жирным */
+    width: 50%; /* Устанавливает ширину текстового слоя */
+}
+.glass-effect2 {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Эффект стекла */
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    font-weight: bold; /* Делает текст жирным */
+    width: 50%; /* Устанавливает ширину текстового слоя */
+}

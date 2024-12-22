@@ -79,7 +79,8 @@ public class MainLayout extends AppLayout {
             return new MenuItemInfo[]{
                     new MenuItemInfo("Игры", GamesView.class, "games-link"),
                     new MenuItemInfo("Разработчики", DeveloperView.class, "developers-link"),
-                    new MenuItemInfo("Издатели", PublisherView.class, "publishers-link")
+                    new MenuItemInfo("Издатели", PublisherView.class, "publishers-link"),
+                    new MenuItemInfo("Дашборд", DashboardView.class, "dashboard-link")
             };
 
     }

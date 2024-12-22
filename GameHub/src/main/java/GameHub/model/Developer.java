@@ -8,7 +8,8 @@ public class Developer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-
+    @Column(name = "name")
+    private String name;
     @Column(name = "city")
     private String city;
 
@@ -37,6 +38,14 @@ public class Developer {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Developer() {

@@ -1,4 +1,4 @@
-/* Общие стили для всех ссылок */
+
 header nav a:any-link {
   text-decoration: none;
   padding: 0 var(--lumo-space-s);
@@ -6,22 +6,24 @@ header nav a:any-link {
   outline: 0;
 }
 
-/* Уникальные стили для каждой ссылки */
+
 header nav a.games-link {
-  color: #e891dd; /* Красный */
+  color: #e891dd;
 }
 
 header nav a.developers-link {
-  color: #00e8e8; /* Синий */
+  color: #00e8e8;
 }
 
 header nav a.publishers-link {
-  color: #ff8dbe; /* Зеленый */
+  color: #ff8dbe;
 }
-
+header nav a.dashboard-link {
+  color: #a1beff;
+}
 /* Стили для наведения */
 header nav a:hover {
-  color: #9eb9fb;
+  color: #f5ca02;
 }
 
 header nav a:active {

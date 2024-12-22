@@ -2,38 +2,40 @@ package GameHub.model;
 
 import jakarta.persistence.*;
 
+
 @Entity
-@Table(name = "games") // Указываем имя таблицы, если хотим отличаться от имени класса
+@Table(name = "games")
 public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+
     @Column(name = "name")
     private String name;
+
     @Column(name = "year")
     private int year;
 
-
-
     @Column(name = "image_title")
-    @Lob // Для хранения больших объектов, таких как изображения
+    @Lob
     private byte[] image_title;
 
     @Column(name = "image_back")
-    @Lob // Для хранения больших объектов, таких как изображения
+    @Lob
     private byte[] image_back;
 
     @Column(name = "genre")
     private String genre;
+
     @ManyToOne
     @JoinColumn(name = "developer_id")
     private Developer developer_id;
+
     @ManyToOne
     @JoinColumn(name = "publisher_id")
     private Publisher publisher_id;
-
 
     public int getId() {
         return id;
@@ -91,10 +93,14 @@ public class Game {
         this.publisher_id = publisher_id;
     }
 
-    public Game() {
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
-
-
+    public Game() {
+    }
 }
